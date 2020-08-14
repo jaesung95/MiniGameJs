@@ -31,7 +31,7 @@ var 틀린횟수 = 0;
 폼.addEventListener('submit', function 비동기(이벤트) { //엔터를 쳤을 때
 	이벤트.preventDefault()
 	var 답 = 입력창.value;
-	console.log(답, 숫자배열, 답 === 숫자배열.join(''));
+	//console.log(답, 숫자배열, 답 === 숫자배열.join(''));
 	if (답 === 숫자배열.join('')) {//답이 맞으면
 		결과.textContent = '홈런';
 		입력창.value = '';
