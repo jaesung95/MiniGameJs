@@ -21,7 +21,7 @@ console.log('당첨숫자들', 당첨숫자들, '보너스', 보너스);
 
 //클로저를 알면 이렇게 무식하게 하지 않음 (중급강좌에서 배울 예정)
 
-var 결과창 = document.getElementById('결과창');
+var 결과창 = document.querySelector('#결과창');
 
 function 공색칠하기(숫자, 결과창) {
 	var 공 = document.createElement('div');
@@ -75,6 +75,6 @@ function 공색칠하기(숫자, 결과창) {
     }, 6000); // 밀리초 10000은 10초
 
     setTimeout(function 비동기콜백함수() {
-        var 칸 = document.getElementsByClassName('보너스')[0];
+        var 칸 = document.querySelector('.보너스');
         공색칠하기(보너스, 칸);
     }, 7000); 

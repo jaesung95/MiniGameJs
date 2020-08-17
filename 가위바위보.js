@@ -7,12 +7,12 @@ setInterval(function(){
     } else {
       left =0;
     }
-    document.querySelectorAll('#computer').style.background = 
+  }
+document.querySelectorAll('#computer').style.background = 
     'url../제로초/가위바위보.jpg)' + left + '0';
 
 document.querySelectorAll('button').forEach(function(button){
     addEventListener('click', function() {
         console.log(this.textContent);
     })
-    test !
 });
